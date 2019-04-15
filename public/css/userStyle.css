@@ -188,7 +188,7 @@ section{
 
 .logosection{
   width: 100%;
-  margin:20px;
+  margin:20px 45px;
 }
 .logosection img {
   width: 60%;
@@ -367,12 +367,12 @@ footer{
   margin: 10px;
   font-family: opensansregular;
   color: black;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   width: 100%;
   justify-content: center;
   line-height: 14px;
-  height: 80px;;
+  /* height: 80px;; */
 }
 
 .subContentList{
@@ -384,6 +384,12 @@ footer{
   font-size: 14px;
 }
 
+.userNotesBox .content{
+display: flex;
+align-items: center;
+width: 100%;
+justify-content: center;
+}
 
 #customScroll::-webkit-scrollbar-track
 {
@@ -482,7 +488,7 @@ footer{
 /* Large content box */
 .contentBoxLarge{
   width: 50%;
-  min-height: 435px;
+  /* min-height: 435px; */
   background: white;
   text-align: center;
   margin: 7px;
@@ -495,13 +501,17 @@ footer{
   background: #7fb5a2;
   width: 100%;
   padding-top: 10px;
-  height: 30px;
+  height: 40px;
   font-family: opensansregular;
   font-weight: bolder;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   color: #fff;
   text-transform: uppercase;
+  text-align: left;
+  padding-left: 20px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
 
 
@@ -531,7 +541,7 @@ footer{
 }
 
 .formEditPassword{
-  background: darkcyan;
+  background: #fff;
 }
 
 .tableHeading, .formHeading{
@@ -610,6 +620,7 @@ font-size: 14px;
   width: calc(100% + 10px);
   margin-left: -10px;
   padding: 5px;
+  margin-bottom: 15px;
 }
 
 .contentBoxLargeManage{
@@ -623,7 +634,7 @@ font-size: 14px;
   opacity: 0.8;
   text-align: center;
   color: #000;
-  font-family: 'Cinzel', serif;
+  font-family: opensansregular;
   font-weight: bolder;
   font-size: 19px;
   border-radius: 5px;
@@ -639,7 +650,46 @@ font-size: 14px;
 .userNotesBox{
   width: 80%;
 }
+.tableborder {
+  width: 97%;
+  border-collapse: collapse;
+}
+.tableborder tr{
+    
+    border-left: 0;
+    border-right: 0;
+   
+}
+.tableborder tr th{
+    width: 30%;
+    background: #efefef;
+    border-left: 1px solid #c4c2c2;
+}
+.tableborder tr td{
+   padding-left: 20px;
+   border-bottom: 1px solid #c4c2c2;
+   border-right: 1px solid #c4c2c2;
+   
+}
+.tableborder tr td img{
+ width: 20px;
+ filter:brightness(0);
+}
 
+.tableborder tr:last-of-type td{
+   padding-left: 20px;
+   
+}
+.tableborder tr:first-of-type td{
+  border-top: 1px solid #c4c2c2;
+}
+.tableborder tr:first-of-type th{
+  border-top: 1px solid #c4c2c2;
+}
+.tableborder tr:last-of-type th{
+  border-bottom: 1px solid #c4c2c2;
+  
+}
 .addNewBox a{
 color:#000;
 }
@@ -649,7 +699,7 @@ margin-bottom: 10px;
 opacity: 0.8;
 }
 .contentBoxLargeEdit{
-  width: 75%;
+  width: 100%;
 }
 
 .deleteBox{
@@ -670,6 +720,7 @@ opacity: 0.8;
 
 .deleteBox img{
   transition: transform 0.3s;
+  width: 30px;
 }
 
 .deleteBox:hover img{
@@ -679,7 +730,8 @@ opacity: 0.8;
 /* Add Form */
 
 .userForm{
-
+  padding: 0 20px;
+  margin-top: 20px;
 }
 
 .userForm label{
@@ -687,8 +739,8 @@ opacity: 0.8;
   margin: 5px;
   margin-bottom: 10px;
   display: block;
-  font-family: 'ZCOOL XiaoWei', serif;
-  font-size: 18px;
+  font-family: opensansregular;
+  font-size: 14px;
   color: rgb(50, 50, 50);
 }
 
@@ -704,7 +756,8 @@ opacity: 0.8;
   outline: none;
   -webkit-transition: border-bottom 0.5s;
   transition: border-bottom 0.5s;
-  font-size: calc(0.5rem + 10px);
+  font-family: opensansregular;
+  font-size: 14px;
 }
 
 .userForm input:not([type="submit"]):focus, .userForm select:focus, .userForm textarea:focus{
@@ -721,18 +774,19 @@ opacity: 0.8;
   max-height: 200px;
 }
 
+
 .userForm input[type=submit]{
   margin: 1%;
   margin-top: 25px;
   width: 98%;
-  height: 50px;
+  height: 40px;
   border-radius: 5px;
   border: none;
   color: white;
   background: #8075B6;
   transition: background .3s;
-  font-family: 'Bitter', serif;
-  font-size: 16px;
+  font-family: opensansregular;
+  font-size: 14px;
   margin-bottom: 25px;
 }
 
@@ -758,7 +812,7 @@ opacity: 0.8;
 
 .formColumn2{
   width: 49%;
-  padding: 5px;
+  padding: 0 20px;
 }
 
 
@@ -769,14 +823,14 @@ opacity: 0.8;
   opacity: 0.6;
   border-radius: 5px;
   color: white;
-  font-size: calc(0.5rem + 10px);
   font-weight: bold;
-  font-family: 'Cinzel', serif;
+  font-family: opensansregular;
   text-align: center;
   transition: opacity .1s;
   user-select: none;
   display: inline-block;
   padding: 10px;
+  font-size: 14px;
 }
 
 .courseModuleBox:hover{
@@ -845,7 +899,7 @@ opacity: 0.8;
   border-radius: 5px;
   font-size: calc(0.5rem + 5px);
   font-weight: bold;
-  font-family: 'Cinzel', serif;
+  font-family: opensansregular;
   padding-bottom: 15px;
   opacity: 0.55;
   transition: opacity 0.15s;
@@ -1059,78 +1113,9 @@ ul.breadcrumb li a:hover {
 
 
 }
+.userNotesBox .content{
+  height: 80px;
+}
 
-/**********************************************************************************************/
-/**********************************************************************************************/
-/**********************************************************************************************/
-/**********************************************************************************************/
-/**********************************************************************************************/
-/**********************************************************************************************/
-/**********************************************************************************************/
-/**********************************************************************************************/
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-{}

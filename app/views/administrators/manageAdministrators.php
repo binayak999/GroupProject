@@ -1,8 +1,6 @@
 
 <div class = "boxesContainer boxesContainerManage">
-<?php
-    echo $note;
-  ?> 
+
   <div class = "contentBoxLarge contentBoxLargeManage addNewBox">
     <a href = "/GroupProject/public/ManageAdministrators/add">
       <div style="width: 100%; height: 80%; padding-top: 4%;">
@@ -11,7 +9,9 @@
       </div>
     </a>
   </div>
-
+  <?php
+    echo $note;
+  ?> 
  
 
 </div>

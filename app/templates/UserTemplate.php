@@ -23,6 +23,8 @@ if (session_status() == PHP_SESSION_NONE) {
 	<title><?php echo $title;?></title>
 	<script src = "/GroupProject/public/script/script.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://code.angularjs.org/1.2.21/angular.js"></script>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
 </head>
 
 <body>
